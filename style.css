@@ -460,3 +460,12 @@ footer {
   height: 400px;
   object-fit: cover; /* Ensures the image fits nicely within the dimensions */
 }
+
+.private-events-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent (h3) */
+  font-weight: inherit; /* Maintain bold styling */
+  font-size: inherit; /* Keep the same font size */
+  line-height: inherit; /* Match line height */
+}
+
