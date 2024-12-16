@@ -13,7 +13,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;  /* Allow the home page to have more space */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -21,14 +21,44 @@ body {
 /* Navbar */
 .navbar {
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
   align-items: center;
   padding: 1rem 0;
-  width: 100%; /* Ensure the navbar spans the entire width */
-  background-color: #fff; /* Optional: Maintain consistent background color */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for style */
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5a918a;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #f2cd31;
+}
+
+.logo-image {
+  max-height: 60px;
+  width: auto;
+}
 
 /* Hero Section */
 .hero {
@@ -80,7 +110,7 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Menu Highlight Section / Our Services Section */
+/* Menu Highlight Section */
 .menu-highlight {
   padding: 4rem 0;
   text-align: center;
@@ -204,259 +234,39 @@ footer p {
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  text-align: center;
 }
 
 .contact-form button:hover {
   background-color: #f2cd31;
 }
 
-/* Our Story Section */
-.our-story {
-  padding: 4rem 0;
-  text-align: center;
-}
-
-.our-story h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-.our-story p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  text-align: left;
-  margin-bottom: 1.5rem;
-  color: #333;
-}
-/* Logo Sizing */
-/* Apply flex styling only within the navbar container */
-.navbar .navbar-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Style the logo with a gap from the navigation links */
-.navbar .logo-image {
-  height: 100px; /* Adjust as needed */
-  width: auto;
-  margin-right: 40px; /* Space between logo and nav links */
-}
-
-/* Align the navigation links */
-.navbar .nav-links {
-  display: flex;
-  gap: 20px; /* Adjust gap between nav items */
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #5a918a;
-  font-weight: 600;
-}
-.story-images {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Space between images */
-  margin: 20px 0; /* Space around the image section */
-}
-
-.story-image {
-  max-width: 250px; /* Limits the width without stretching */
-  height: auto; /* Keeps the original aspect ratio */
-  border-radius: 8px; /* Optional: rounded corners */
-}
-.centered-image {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; /* Space above the image */
-}
-
-.tiny-banana {
-  max-width: 250px; /* Same size as other images */
-  height: auto;
-  border-radius: 8px; /* Same rounded corners as the other images */
-}
-.section-heading {
-  color: #5a918a;
-}
-.section-heading2 {
-  color: #70bcb9;
-}
-.highlight-name {
-  color: #dbad39;
-}
-.welcome {
-  color: #dbad39;
-}
-/* Make sure the body takes up full height */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Ensure the menu image fills the screen */
+/* Menu Section */
 .menu-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Make it take up the full viewport height */
-  background-color: #f4f4f4; /* Optional background color */
-}
-
-.menu-image {
-  width: 100%;
   height: auto;
-  object-fit: contain; /* Keeps the image in its original aspect ratio */
-}
-
-/* Optional: Style the navigation bar */
-.navbar-container {
-  width: 90%; /* Limit the inner content width for better alignment */
-  max-width: 1200px; /* Ensure consistency with your main container */
-  margin: 0 auto; /* Center the navbar content */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin-right: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-}
-
-.logo-image {
-  max-width: 150px;
-}
-
-/* Optional: Footer styling */
-footer {
-  text-align: center;
   padding: 20px;
-  background-color: #333;
-  color: #fff;
-}
-/* Menu Section: Ensure proper alignment and scaling */
-.menu-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full height of the viewport */
-  padding: 20px; /* Add padding to prevent the image from touching edges */
-  background-color: #f8f8f8; /* Matches the general background */
+  background-color: #f8f8f8;
 }
 
 .menu-image {
-  max-width: 100%; /* Ensures the image never exceeds the container width */
-  max-height: 100%; /* Prevents the image from overflowing vertically */
-  object-fit: contain; /* Keeps the original aspect ratio intact */
-  border-radius: 10px; /* Optional: Rounded corners for a softer look */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for better emphasis */
+  max-width: 90%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design: Adjust for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
   .menu-section {
-    height: auto; /* Allow the section to adjust its height */
+    height: auto;
     padding: 10px;
   }
 
   .menu-image {
-    max-width: 90%; /* Add some margin for small screens */
-    max-height: 70vh; /* Prevent excessive vertical space usage */
+    max-width: 90%;
+    max-height: 70vh;
   }
-}
-
-/* Navbar: Ensure consistent alignment across pages */
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff; /* Matches the rest of the website */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for separation */
-}
-
-.nav-links a {
-  color: #5a918a; /* Ensures the text color matches your branding */
-}
-
-.nav-links a:hover {
-  color: #f2cd31; /* Consistent hover color */
-}
-
-.logo-image {
-  max-height: 60px; /* Adjusted height for consistent scaling */
-  width: auto;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  width: 100%; /* Ensure full-width spanning */
-  background-color: #fff; /* Maintain a consistent background */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for style */
-}
-.hero-section {
-  position: relative; /* To enable layering for overlay and text */
-  background: url('cover.png') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 60vh; /* Adjust height as needed */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Dark overlay, increase opacity */
-  z-index: 1; /* Ensures the overlay stays above the image but below the text */
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2; /* Ensures text is above the overlay */
-  color: white;
-}
-
-.hero-content h1 {
-  font-size: 3rem; /* Adjust font size for header */
-  font-weight: bold;
-}
-
-.hero-content p {
-  font-size: 1.25rem;
-  margin-top: 1rem;
-}
-
-.image-600 {
-  width: 400px;
-  height: 400px;
-  object-fit: cover; /* Ensures the image fits nicely within the dimensions */
 }
