@@ -3,30 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Private Events</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Private Events | Nana's Whip</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your existing CSS -->
+  <style>
+    /* Temporary inline styles to structure the page content */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      background-color: #fffaf2; /* Soft background similar to the image */
+      padding: 2rem 1rem;
+    }
+    .hero h1 {
+      color: #f97316; /* Orange title color */
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 0 0 1rem;
+    }
+    .hero p {
+      color: #444;
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Product Section */
+    .product-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem auto;
+      max-width: 1200px;
+    }
+    .product {
+      text-align: center;
+      width: 300px;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      background-color: #ccc; /* Placeholder gray background for images */
+    }
+    .product h2 {
+      color: #f97316; /* Orange text */
+      font-size: 1.25rem;
+      margin: 1rem 0 0.5rem;
+    }
+    .product p {
+      color: #666;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* Highlight Section */
+    .highlight {
+      background-color: #1f2937; /* Dark blue background */
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .highlight h2 {
+      color: #a3e635; /* Light green title */
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .highlight p {
+      font-size: 1rem;
+      margin: 0 auto 2rem;
+      max-width: 500px;
+    }
+    .highlight img {
+      width: 250px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="navbar-container">
-        <img src="nana-logo.png" alt="Logo" class="logo-image" />
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="locations.html">Locations</a></li>
-          <li><a href="private-events.html">Private Events</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="private-events">
-    <h1>Private Events</h1>
-    <p>This page is under construction. Stay tuned!</p>
-  </main>
+  <!-- Navbar (same as your existing pages) -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html"><img src="logo.png" alt="Nana's Logo" class="logo-image"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="private-events.html" class="active">Private Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>LIVE THE YOGO LIFE</h1>
+    <p>Packed with essential vitamins, rich in calcium and vitamin D, and entirely sugar-free, Yogo offers a guilt-free indulgence that’s perfect for everyone—enjoy the creamy goodness with a fraction of the environmental impact.</p>
+  </section>
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="placeholder1.jpg" alt="Vanilla & Cinnamon">
+      <h2>VANILLA & CINNAMON YOGO</h2>
+      <p>A creamy blend of classic vanilla infused with the warm, spicy essence of cinnamon, creating a comforting and nostalgic flavor experience.</p>
+    </div>
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="placeholder2.jpg" alt="Banana & Pecan">
+      <h2>BANANA & PECAN YOGO</h2>
+      <p>Ripe, sweet bananas are perfectly paired with crunchy, buttery pecans in this rich and indulgent ice cream that offers a delightful balance of flavors and textures.</p>
+    </div>
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="placeholder3.jpg" alt="Melon & Mint">
+      <h2>MELON & MINT YOGO</h2>
+      <p>Refreshing melon meets cool mint in this light and invigorating ice cream, offering a burst of fresh, summery flavors with every spoonful.</p>
+    </div>
+  </section>
+
+  <!-- Highlight Section -->
+  <section class="highlight">
+    <h2>YOGOLICIOUS</h2>
+    <p>Yogo is made without animal cruelty, and with a fraction of the environmental impact of conventional dairy milk.</p>
+    <img src="placeholder4.jpg" alt="Yogo Ice Cream">
+  </section>
+
+  <!-- Footer (same as your existing footer) -->
   <footer>
-    <p>&copy; 2024 Nana's. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2024 Nana's Whip. All Rights Reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
+
